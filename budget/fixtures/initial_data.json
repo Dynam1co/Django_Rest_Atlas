@@ -1,0 +1,16 @@
+[
+    {
+      "model": "budget.BudgetType",
+      "pk": 1,
+      "fields": {
+        "description": "Ingreso"
+      }
+    },
+    {
+      "model": "budget.BudgetType",
+      "pk": 2,
+      "fields": {
+        "description": "Gasto"
+      }
+    }
+  ]

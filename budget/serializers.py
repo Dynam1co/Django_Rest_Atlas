@@ -23,7 +23,9 @@ class BudgetMonthlyListSerializer(serializers.ModelSerializer):
             'id',
             'url',
             'amount',
-            'type_id'
+            'type_id',
+            'category_id',
+            'description'
         ]
 
 

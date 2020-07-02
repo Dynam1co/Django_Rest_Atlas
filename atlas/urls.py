@@ -8,7 +8,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 from budget.api import BudgetMonthlyList, BudgetMonthlyDetail
-from budget.api import BudgetTypeList
+from budget.api import BudgetTypeList, BudgetEntryCategoryList
 
 
 def permission_denied_view(request):
@@ -40,5 +40,8 @@ urlpatterns = [
 
     url(r'^api/1.0/budget_entry/$', BudgetMonthlyList.as_view(), name='budget_entry'),
     url(r'^api/1.0/budget_entry/(?P<pk>[0-9]+)$', BudgetMonthlyDetail.as_view(), name='budgetmonthly-detail'),
+
     url(r'^api/1.0/entry_type/$', BudgetTypeList.as_view(), name='entry_type'),
+
+    url(r'^api/1.0/entry_category/$', BudgetEntryCategoryList.as_view(), name='entry_category'),
 ]

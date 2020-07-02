@@ -12,5 +12,33 @@
       "fields": {
         "description": "Gasto"
       }
+    },
+    {
+      "model": "budget.BudgetEntryCategory",
+      "pk": 1,
+      "fields": {
+        "description": "Hogar"
+      }
+    },
+    {
+      "model": "budget.BudgetEntryCategory",
+      "pk": 2,
+      "fields": {
+        "description": "Combustible"
+      }
+    },
+    {
+      "model": "budget.BudgetEntryCategory",
+      "pk": 3,
+      "fields": {
+        "description": "Alimentación"
+      }
+    },
+    {
+      "model": "budget.BudgetEntryCategory",
+      "pk": 4,
+      "fields": {
+        "description": "Ocio"
+      }
     }
   ]

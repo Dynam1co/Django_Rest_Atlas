@@ -19,6 +19,15 @@ Y la base de datos. El propietario será el usuario que acabamos de crear:
 CREATE DATABASE db_name WITH OWNER username;
 ```
 
+## Datos por defecto
+La aplicación necesita unos datos por defecto para funcionar, dentro de la carpeta fixtures, hay un fichero json llamado **initial_data.json** que contiene esos datos por defecto.
+
+Para insertar los datos, con el entorno virtual activado ejecutamos:
+
+```
+$ python manage.py loaddata initial_data.json
+```
+
 # Configuración
 Tendremos que crear un archivo llamado **settings.py** dentro de la carpeta **atlas** hay uno de ejemplo que puede renombrarse. [Settings ejemplo](atlas/settings_example.py)
 
